@@ -1,0 +1,690 @@
+@import consts
+
+@import mix
+
+@import reset
+
+@import fonts
+
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder
+  opacity: 1
+  transition: opacity 0.3s ease
+  color: $black
+  font-size: 16px
+  font-family: $ff_YK
+
+input::-moz-placeholder, textarea::-moz-placeholder
+  opacity: 1
+  transition: opacity 0.3s ease
+  color: $black
+  font-size: 16px
+  font-family: $ff_YK
+
+input:-moz-placeholder, textarea:-moz-placeholder
+  opacity: 1
+  transition: opacity 0.3s ease
+  color: $black
+  font-size: 16px
+  font-family: $ff_YK
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder
+  opacity: 1
+  transition: opacity 0.3s ease
+  color: $black
+  font-size: 16px
+  font-family: $ff_YK
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder
+  opacity: 0
+  transition: opacity 0.3s ease
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder
+  opacity: 0
+  transition: opacity 0.3s ease
+input:focus:-moz-placeholder, textarea:focus:-moz-placeholder
+  opacity: 0
+  transition: opacity 0.3s ease
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder
+  opacity: 0
+  transition: opacity 0.3s ease
+
+input, textarea
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  border-radius: 0
+  outline: none
+
+body::after
+  display: none
+  content: url("../icons/fur.svg") url("../icons/fur-orange.svg") url("../icons/dress.svg") url("../icons/dress-orange.svg") url("../icons/jacket.svg") url("../icons/jacket-orange.svg") url("../icons/blouse.svg") url("../icons/blouse-orange.svg") url("../icons/jeans.svg") url("../icons/jeans-orange.svg") url("../icons/shirt.svg") url("../icons/shirt-orange.svg")
+
+
+body
+  font-family: $ff_YK, sans-serif
+  font-size: 16px
+  font-weight: $fw_400
+  color: $black
+  position: relative
+  -webkit-overflow-scrolling: touch
+
+svg
+  display: block
+  width: 100%
+  height: 100%
+
+.wrap
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+
+.all-content
+  flex: 1 0 auto
+
+footer
+  flex: 0 0 auto
+
+.header-section
+  padding: 23px 0
+
+.container
+  max-width: 1660px
+  margin: 0 auto
+
+.header-content
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.header-left, .header-right
+  flex: 1 1 auto
+  display: flex
+  align-items: center
+  width: 33.3%
+
+.header-left
+  justify-content: flex-start
+
+  .header-menu > ul > li
+    padding: 0 45px
+
+.header-right
+  justify-content: flex-end
+
+  .header-menu > ul > li
+    padding: 0 30px
+
+.header-logo
+  width: 154px
+
+  a, img
+    display: block
+    width: 100%
+    height: 100%
+
+.header-menu
+  & > ul
+    display: flex
+    justify-content: flex-start
+    align-items: center
+
+    & > li > a
+      color: $black
+      font-size: 24px
+      text-transform: uppercase
+      transition: all 0.2s ease-in-out
+
+.header-search
+  padding: 0 24px
+
+.header-search-btn
+  display: block
+  width: 19px
+  height: 19px
+  background: rgba(255,255,255,0) url("../icons/search.svg") no-repeat center
+  background-size: contain
+  cursor: pointer
+  transition: all 0.2s ease-in-out
+
+.header-cart
+  padding-left: 28px
+
+.header-cart-link
+  display: block
+  width: 24px
+  height: 22px
+  background: url("../icons/basket-black.svg") no-repeat center
+  background-size: contain
+  transition: all 0.2s ease-in-out
+
+.main-collection-banner
+  display: flex
+  justify-content: flex-start
+  align-items: flex-start
+
+.collection-banner-slider
+  flex: 0 0 calc((100% / 6) * 4)
+  max-width: calc((100% / 6) * 4)
+
+.collection-banner-nav
+  flex: 0 0 calc((100% / 6) * 2)
+  max-width: calc((100% / 6) * 2)
+  display: flex
+  justify-content: flex-start
+  align-items: flex-start
+
+.collection-swiper
+  width: 100%
+
+  .swiper-slide
+    position: relative
+
+.collection-swiper-bg
+  width: 100%
+  height: 540px
+  background: no-repeat center
+  background-size: cover
+  position: relative
+
+  &::before
+    content: ''
+    display: block
+    width: 100%
+    height: 100%
+    background: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0) 100%)
+    opacity: 0.8
+
+.collection-swiper-content
+  position: absolute
+  bottom: 80px
+  width: 100%
+  padding-left: 22.8%
+  z-index: 2
+
+.collection-swiper-title
+  margin-bottom: 50px
+
+  h2
+    color: $white
+    font-size: 48px
+    font-weight: $fw_700
+    max-width: 540px
+
+.oragne-btn
+  display: inline-block
+  padding: 16px 25px
+  min-width: 160px
+  min-height: 46px
+  text-align: center
+  color: $white
+  border: 3px solid $white
+  background: $orange
+  font-size: 18px
+  text-transform: uppercase
+  transition: all 0.3s ease
+  cursor: pointer
+
+  &:hover
+    background: rgba(255,255,255,0)
+
+.collection-swiper-btn
+  display: block
+  width: 50px
+  height: 50px
+  border-radius: 50%
+  border: 3px solid #5b523a
+  background: rgba(255,255,255,0.8) url("../icons/arrow-right-brown.svg") no-repeat center
+  background-size: 37px
+  transition: all 0.3s ease-in-out
+  cursor: pointer
+
+  &::after
+    display: none
+
+
+  &.collection-swiper-prev
+    left: 60px
+    transform: rotate(-180deg)
+
+  &.collection-swiper-next
+    right: 60px
+
+.collection-banner-item
+  position: relative
+  border-left: 1px solid $white
+  flex: 0 0 50%
+  max-width: 50%
+
+.collection-banner-bg
+  width: 100%
+  height: 540px
+  background: no-repeat center
+  background-size: cover
+  position: relative
+
+  &::before
+    content: ''
+    display: block
+    width: 100%
+    height: 100%
+    background: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0) 100%)
+    opacity: 0.7
+
+.collection-banner-content
+  position: absolute
+  text-align: center
+  bottom: 35px
+  padding: 0 20px
+  width: 100%
+
+.collection-banner-title
+  margin-bottom: 15px
+
+  h3
+    color: $white
+    font-size: 30px
+    font-weight: 700
+
+.orange-link
+  display: inline-block
+  color: $orange
+  font-family: $ff_CS, sans-serif
+  font-size: 16px
+  font-weight: $fw_700
+  position: relative
+  padding-bottom: 2px
+
+  &::after
+    content: ''
+    display: block
+    width: 100%
+    height: 1px
+    background: $orange
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    transition: all 0.3s ease-in-out
+
+.main-collection-nav
+  width: 100%
+  margin-top: 1px
+
+.collection-nav-list
+  display: flex
+  align-items: flex-start
+  justify-content: flex-start
+
+.collection-nav-item
+  flex: 0 0 calc(100% / 6)
+  max-width: calc(100% / 6)
+  height: 100px
+
+  &:not(:last-child)
+    border-right: 1px solid $white
+
+.collection-nav-link
+  display: flex
+  width: 100%
+  height: 100%
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  padding: 13px
+  color: $white
+  font-size: 24px
+  text-transform: uppercase
+  background: $black
+  transition: all 0.3s ease-in-out
+  cursor: pointer
+
+.collection-nav-icon
+  display: block
+  margin-bottom: 8px
+  width: 100%
+  flex: 0 0 45px
+  max-height: 45px
+  background: no-repeat center
+  transition: all 0.3s ease-in-out
+
+  &.drees
+    background-image: url("../icons/dress.svg")
+    background-size: 28px auto
+
+  &.fur
+    background-image: url("../icons/fur.svg")
+    background-size: 42px
+
+  &.jacket
+    background-image: url("../icons/jacket.svg")
+    background-size: 38px auto
+
+  &.blouse
+    background-image: url("../icons/blouse.svg")
+    background-size: 29px auto
+
+  &.jeans
+    background-image: url("../icons/jeans.svg")
+    background-size: 37px auto
+
+  &.shirt
+    background-image: url("../icons/shirt.svg")
+    background-size: 42px auto
+
+
+.section-main-collection
+  margin-bottom: 60px
+
+.products-tabs-caption
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  margin-bottom: 30px
+  padding-right: 150px
+
+  li
+    font-size: 36px
+    color: $black
+    position: relative
+    padding-bottom: 2px
+    cursor: pointer
+    transition: all 0.2s ease-in-out
+
+    &:not(:last-child)
+      margin-right: 55px
+
+    &::before, &::after
+      content: ''
+      display: block
+      width: 0
+      height: 2px
+      background: $orange
+      position: absolute
+      bottom: 0
+      opacity: 0
+      transition: opacity 0.2s ease-in-out, width 0.4s ease-in-out
+
+    &::after
+      right: 0
+
+    &::before
+      left: 0
+
+    &.active
+      color: $orange
+
+      &::after, &::before
+        opacity: 1
+        width: 100%
+
+.products-card-photo
+  width: 100%
+
+  & > a
+    display: block
+    width: 100%
+    height: 100%
+    position: relative
+
+.products-card-bg
+  width: 100%
+  padding-top: 131.5%
+  position: relative
+  z-index: 2
+  border: 1px solid #e8e8e8
+
+  img
+    display: block
+    width: auto
+    height: auto
+    max-width: 100%
+    max-height: 100%
+    position: absolute
+    left: 0
+    top: 0
+    bottom: 0
+    right: 0
+    z-index: 1
+
+.products-card-tag
+  position: absolute
+  top: 50px
+  left: 20px
+  z-index: 3
+
+.products-card-country
+  width: 18px
+  margin-bottom: 20px
+
+  img
+    display: block
+    width: 100%
+
+.products-card-category
+  padding: 2px 10px
+  border-radius: 4px
+  background: $black
+  color: $white
+  font-family: $ff_CS
+  font-size: 14px
+  font-weight: $fw_700
+  letter-spacing: -0.7px
+  display: inline-block
+
+
+.products-card-name
+  font-size: 24px
+  font-weight: $fw_700
+  margin: 18px 0
+
+  a
+    color: $black
+
+.products-card-caption
+  font-family: $ff_CS
+  font-size: 16px
+  font-weight: $fw_300
+
+.products-card-options
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.products-size-grid
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  margin-left: -2px
+  margin-right: -2px
+
+.products-size-item
+  margin: 0 2px
+  height: 18px
+  width: 46px
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 4px
+  border: 1px solid #bababa
+  color: #bababa
+  font-family: $ff_CS
+  font-size: 16px
+  font-weight: 700
+  cursor: pointer
+
+  &.active
+    border-color: $orange
+    color: $orange
+
+.products-size-text
+  margin-top: 9px
+  font-size: 18px
+  text-transform: uppercase
+
+.products-card-price
+  display: flex
+  align-items: baseline
+  justify-content: flex-end
+
+.products-in-basket
+  margin-left: 18px
+
+.add-cart
+  display: block
+  width: 24px
+  height: 22px
+  background: rgba(255,255,255,0) url("../icons/basket-orange.svg") no-repeat center
+  background-size: contain
+  cursor: pointer
+
+.price-new
+  font-size: 36px
+  font-weight: $fw_700
+
+.price-old
+  margin-bottom: 5px
+  color: #bbbbbb
+  font-size: 24px
+  text-decoration: line-through
+
+.products-card-size
+  margin-top: 15px
+
+.products-card-options.sale-price
+  .products-card-size
+    margin-top: 0
+
+  .products-price-grid
+    margin-top: 10px
+
+  .products-card-price
+    align-items: center
+
+.products-tabs-swiper
+  margin-left: -10px
+  margin-right: -10px
+
+  .swiper-slide
+    padding: 10px
+
+
+.products-swiper-navigation
+  position: absolute
+  top: -54px
+  right: 0
+
+.products-swiper-btn
+  position: relative
+  left: 0
+  right: 0
+  width: 37px
+  height: 10px
+  background: url("../icons/arrow-right-black.svg") no-repeat center
+  background-size: contain
+  top: 0
+  margin-top: 0
+  display: inline-block
+  transition: all 0.3s ease-in-out
+
+  &.products-swiper-prev
+    transform: rotate(-180deg)
+    margin-right: 35px
+
+  &::after
+    display: none
+
+
+
+.products-tabs-item
+  position: relative
+  display: none
+
+  &.active
+    display: block
+
+
+.products-card-desc
+  padding-bottom: 25px
+
+.products-card
+  position: relative
+
+.products-card-hover
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  z-index: -1000
+  opacity: 0
+  visibility: hidden
+  transition: opacity 0.22s ease-in-out
+
+  .products-card-tag
+    position: relative
+    top: 0
+    left: 0
+    padding: 50px 20px 0
+
+  .products-card-photo
+    position: relative
+    opacity: 0
+    transition: opacity 0.25s ease-in
+
+.products-hover-bg
+  position: absolute
+  left: -10px
+  bottom: -10px
+  width: calc(100% + 20px)
+  height: calc(100% + 20px)
+  background: rgba(0,0,0,0.8)
+  transition: height 0s linear
+  transform: scale(0.95)
+
+.products-card-characteristics
+  margin-top: 80px
+
+.products-characteristics-row
+  display: flex
+  align-items: center
+  justify-content: space-between
+  border-left: 1px solid $white
+  border-right: 1px solid $white
+  border-bottom: 1px solid $white
+
+  &:first-of-type
+    border-top: 1px solid $white
+
+.products-characteristics-cell
+  width: 50%
+  padding: 12px
+  color: #acacac
+  font-family: $ff_CS
+  font-size: 16px
+  font-weight: 300
+
+  &:nth-child(2n)
+    text-align: right
+    color: $white
+    border-left: 1px solid $white
+
+.products-card-more
+  margin-top: 90px
+  text-align: center
+
+@keyframes fadeInUp
+  from
+    opacity: 0
+    -webkit-transform: translate3d(0, 60%, 0)
+    transform: translate3d(0, 60%, 0)
+
+
+  to
+    opacity: 1
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+
+
+.section-main-products
+  margin-bottom: 100px

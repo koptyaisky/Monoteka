@@ -1,0 +1,74 @@
+@import consts
+
+@import mix
+
+@media screen and (max-width: 1700px)
+  .container
+    margin: 0 20px
+
+
+@media screen and (min-width: 1200px)
+  .products-card-desc, .products-card-name a
+    transition: all 0.4s cubic-bezier(0, 0.55, 0.45, 1)
+
+  .products-card:hover
+    .products-card-hover
+      opacity: 1
+      visibility: visible
+      z-index: 3
+
+      .products-card-photo
+        opacity: 1
+
+    .products-card-desc
+      position: relative
+      z-index: 4
+      color: $white
+
+    .products-card-name a
+      color: $white
+
+    .products-hover-bg
+      transform: scale(1)
+      transition: transform 0.3s cubic-bezier(0, 0.55, 0.45, 1)
+
+    .products-card-characteristics
+      animation: fadeInUp 0.35s cubic-bezier(0.5, 1, 0.89, 1) forwards
+      animation-fill-mode: both
+
+    .products-card-more
+      animation: fadeInUp 0.33s cubic-bezier(0, 0.55, 0.45, 1) 0.1s forwards
+
+  .orange-link:hover
+    &::after
+      opacity: 0
+
+  .products-tabs-caption li:hover, .header-menu > ul > li > a:hover
+    color: $orange
+
+  .products-swiper-btn:hover, .collection-swiper-btn:hover
+    opacity: 0.5
+
+  .collection-nav-link:hover
+    background: $white
+    color: $orange
+
+    .collection-nav-icon
+      &.drees
+        background-image: url("../icons/dress-orange.svg")
+      &.fur
+        background-image: url("../icons/fur-orange.svg")
+      &.jacket
+        background-image: url("../icons/jacket-orange.svg")
+      &.blouse
+        background-image: url("../icons/blouse-orange.svg")
+      &.jeans
+        background-image: url("../icons/jeans-orange.svg")
+      &.shirt
+        background-image: url("../icons/shirt-orange.svg")
+
+  .header-search-btn:hover, .header-cart-link:hover
+    opacity: 0.7
+
+
+

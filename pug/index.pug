@@ -1,0 +1,988 @@
+extends templates/main
+
+
+block variables
+    - var pageTitle = 'Главная'
+
+block content
+    section
+        div.section-main-collection
+            div.container
+                div.main-collection-content
+                    div.main-collection-banner
+                        div.collection-banner-slider
+                            div.swiper-container.collection-swiper
+                                div.swiper-wrapper
+                                    div.swiper-slide
+                                        div.collection-swiper-bg(style="background-image:url('img/banner.jpg')")
+                                        div.collection-swiper-content
+                                            div.collection-swiper-title
+                                                h2 Monoteka-group — лучшие моменты жизни вместе с нашими платьями
+                                            div.collection-swiper-link
+                                                a.oragne-btn(href='#') купить
+                                    div.swiper-slide
+                                        div.collection-swiper-bg(style="background-image:url('img/banner.jpg')")
+                                        div.collection-swiper-content
+                                            div.collection-swiper-title
+                                                h2 2 Monoteka-group — лучшие моменты жизни вместе с нашими платьями
+                                            div.collection-swiper-link
+                                                a.oragne-btn(href='#') купить
+                                    div.swiper-slide
+                                        div.collection-swiper-bg(style="background-image:url('img/banner.jpg')")
+                                        div.collection-swiper-content
+                                            div.collection-swiper-title
+                                                h2 3 Monoteka-group — лучшие моменты жизни вместе с нашими платьями
+                                            div.collection-swiper-link
+                                                a.oragne-btn(href='#') купить
+                                div.swiper-button-prev.collection-swiper-btn.collection-swiper-prev
+                                div.swiper-button-next.collection-swiper-btn.collection-swiper-next
+                        div.collection-banner-nav
+                            div.collection-banner-item.collection-banner-first
+                                div.collection-banner-bg(style="background-image:url('img/banner2.jpg')")
+                                div.collection-banner-content
+                                    div.collection-banner-title
+                                        h3 Пиджаки
+                                    div.collection-banner-link
+                                        a.orange-link(href="#") в наших магазинах
+                            div.collection-banner-item.collection-banner-second
+                                div.collection-banner-bg(style="background-image:url('img/banner3.jpg')")
+                                div.collection-banner-content
+                                    div.collection-banner-title
+                                        h3 Деловой стиль
+                                    div.collection-banner-link
+                                        a.orange-link(href="#") узнать больше
+                    div.main-collection-nav
+                        ul.collection-nav-list
+                            li.collection-nav-item
+                                a.collection-nav-link(href="#")
+                                    div.collection-nav-icon.drees
+                                    div.collection-nav-title
+                                        p платья
+                            li.collection-nav-item
+                                a.collection-nav-link(href="#")
+                                    div.collection-nav-icon.fur
+                                    div.collection-nav-title
+                                        p шубы
+                            li.collection-nav-item
+                                a.collection-nav-link(href="#")
+                                    div.collection-nav-icon.jacket
+                                    div.collection-nav-title
+                                        p пиджаки
+                            li.collection-nav-item
+                                a.collection-nav-link(href="#")
+                                    div.collection-nav-icon.blouse
+                                    div.collection-nav-title
+                                        p блузки
+                            li.collection-nav-item
+                                a.collection-nav-link(href="#")
+                                    div.collection-nav-icon.jeans
+                                    div.collection-nav-title
+                                        p джинсы
+                            li.collection-nav-item
+                                a.collection-nav-link(href="#")
+                                    div.collection-nav-icon.shirt
+                                    div.collection-nav-title
+                                        p рубашки
+    section
+        div.section-main-products
+            div.container
+                div.main-products-content
+                    div.main-products-tabs
+                        ul.products-tabs-caption
+                            li.active Лучшие предложения недели
+                            li Новинки
+                            li Рекомендуем
+                        div.products-tabs-grid
+                            div.products-tabs-item.active
+                                div.swiper-container.products-tabs-swiper
+                                    div.swiper-wrapper
+                                        div.swiper-slide
+                                            div.products-card
+                                                div.products-card-info
+                                                    div.products-card-photo
+                                                        a(href='#')
+                                                            div.products-card-bg
+                                                                img(src="img/slider1.jpg" alt="")
+                                                            div.products-card-tag
+                                                                div.products-card-country
+                                                                    img(src="icons/france.svg" alt="")
+                                                                div.products-card-category new
+                                                    div.products-card-desc
+                                                        div.products-card-name
+                                                            a(href="#") Кожаная юбка
+                                                        div.products-card-caption
+                                                            p Описание: Полосатая кофта из полосатого трикотажа, без молнии
+                                                        div.products-card-options
+                                                            div.products-card-size
+                                                                div.products-size-grid
+                                                                    div.products-size-item.active 44
+                                                                div.products-size-text
+                                                                    p размер
+                                                            div.products-card-price
+                                                                div.products-price-grid
+                                                                    p.price-new 790 р.
+                                                                div.products-in-basket
+                                                                    button.add-cart
+                                                div.products-card-hover
+                                                    div.products-hover-bg
+                                                    div.products-card-photo
+                                                        div.products-card-tag
+                                                            div.products-card-country
+                                                                img(src="icons/france.svg" alt="")
+                                                            div.products-card-category new
+                                                        div.products-card-characteristics
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Материал
+                                                                div.products-characteristics-cell
+                                                                    p Хлопок
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Сезон
+                                                                div.products-characteristics-cell
+                                                                    p Лето
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Страна-производитель
+                                                                div.products-characteristics-cell
+                                                                    p Франция
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Длина
+                                                                div.products-characteristics-cell
+                                                                    p Мини
+                                                        div.products-card-more
+                                                            a.orange-link(href="#") Перейти в карточку
+                                        div.swiper-slide
+                                            div.products-card
+                                                div.products-card-info
+                                                    div.products-card-photo
+                                                        a(href='#')
+                                                            div.products-card-bg
+                                                                img(src="img/slider2.jpg" alt="")
+                                                            div.products-card-tag
+                                                                div.products-card-country
+                                                                    img(src="icons/italy.svg" alt="")
+                                                                div.products-card-category sale
+                                                    div.products-card-desc
+                                                        div.products-card-name
+                                                            a(href="#") Платье в горох с поясом
+                                                        div.products-card-caption
+                                                            p Описание: Полосатая кофта из полосатого трикотажа, без молнии
+                                                        div.products-card-options.sale-price
+                                                            div.products-card-size
+                                                                div.products-size-grid
+                                                                    div.products-size-item.active 44
+                                                                    div.products-size-item 46
+                                                                    div.products-size-item 48
+                                                                div.products-size-text
+                                                                    p размер
+                                                            div.products-card-price
+                                                                div.products-price-grid
+                                                                    p.price-old 1190 р.
+                                                                    p.price-new 790 р.
+                                                                div.products-in-basket
+                                                                    button.add-cart
+                                                div.products-card-hover
+                                                    div.products-hover-bg
+                                                    div.products-card-photo
+                                                        div.products-card-tag
+                                                            div.products-card-country
+                                                                img(src="icons/italy.svg" alt="")
+                                                            div.products-card-category sale
+                                                        div.products-card-characteristics
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Материал
+                                                                div.products-characteristics-cell
+                                                                    p Хлопок
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Сезон
+                                                                div.products-characteristics-cell
+                                                                    p Лето
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Страна-производитель
+                                                                div.products-characteristics-cell
+                                                                    p Франция
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Длина
+                                                                div.products-characteristics-cell
+                                                                    p Мини
+                                                        div.products-card-more
+                                                            a.orange-link(href="#") Перейти в карточку
+                                        div.swiper-slide
+                                            div.products-card
+                                                div.products-card-info
+                                                    div.products-card-photo
+                                                        a(href='#')
+                                                            div.products-card-bg
+                                                                img(src="img/slider3.jpg" alt="")
+                                                            div.products-card-tag
+                                                                div.products-card-country
+                                                                    img(src="icons/france.svg" alt="")
+                                                                div.products-card-category new
+                                                    div.products-card-desc
+                                                        div.products-card-name
+                                                            a(href="#") Розовое платье
+                                                        div.products-card-caption
+                                                            p Описание: Полосатая кофта из полосатого трикотажа, без молнии
+                                                        div.products-card-options
+                                                            div.products-card-size
+                                                                div.products-size-grid
+                                                                    div.products-size-item.active 44
+                                                                    div.products-size-item 46
+                                                                    div.products-size-item 48
+                                                                div.products-size-text
+                                                                    p размер
+                                                            div.products-card-price
+                                                                div.products-price-grid
+                                                                    p.price-new 790 р.
+                                                                div.products-in-basket
+                                                                    button.add-cart
+                                                div.products-card-hover
+                                                    div.products-hover-bg
+                                                    div.products-card-photo
+                                                        div.products-card-tag
+                                                            div.products-card-country
+                                                                img(src="icons/france.svg" alt="")
+                                                            div.products-card-category new
+                                                        div.products-card-characteristics
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Материал
+                                                                div.products-characteristics-cell
+                                                                    p Хлопок
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Сезон
+                                                                div.products-characteristics-cell
+                                                                    p Лето
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Страна-производитель
+                                                                div.products-characteristics-cell
+                                                                    p Франция
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Длина
+                                                                div.products-characteristics-cell
+                                                                    p Мини
+                                                        div.products-card-more
+                                                            a.orange-link(href="#") Перейти в карточку
+                                        div.swiper-slide
+                                            div.products-card
+                                                div.products-card-info
+                                                    div.products-card-photo
+                                                        a(href='#')
+                                                            div.products-card-bg
+                                                                img(src="img/slider4.jpg" alt="")
+                                                            div.products-card-tag
+                                                                div.products-card-country
+                                                                    img(src="icons/france.svg" alt="")
+                                                                div.products-card-category new
+                                                    div.products-card-desc
+                                                        div.products-card-name
+                                                            a(href="#") Полосатая кофта
+                                                        div.products-card-caption
+                                                            p Описание: Полосатая кофта из полосатого трикотажа, без молнии
+                                                        div.products-card-options
+                                                            div.products-card-size
+                                                                div.products-size-grid
+                                                                    div.products-size-item.active 44
+                                                                div.products-size-text
+                                                                    p размер
+                                                            div.products-card-price
+                                                                div.products-price-grid
+                                                                    p.price-new 790 р.
+                                                                div.products-in-basket
+                                                                    button.add-cart
+                                                div.products-card-hover
+                                                    div.products-hover-bg
+                                                    div.products-card-photo
+                                                        div.products-card-tag
+                                                            div.products-card-country
+                                                                img(src="icons/france.svg" alt="")
+                                                            div.products-card-category new
+                                                        div.products-card-characteristics
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Материал
+                                                                div.products-characteristics-cell
+                                                                    p Хлопок
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Сезон
+                                                                div.products-characteristics-cell
+                                                                    p Лето
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Страна-производитель
+                                                                div.products-characteristics-cell
+                                                                    p Франция
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Длина
+                                                                div.products-characteristics-cell
+                                                                    p Мини
+                                                        div.products-card-more
+                                                            a.orange-link(href="#") Перейти в карточку
+                                        div.swiper-slide
+                                            div.products-card
+                                                div.products-card-info
+                                                    div.products-card-photo
+                                                        a(href='#')
+                                                            div.products-card-bg
+                                                                img(src="img/slider2.jpg" alt="")
+                                                            div.products-card-tag
+                                                                div.products-card-country
+                                                                    img(src="icons/italy.svg" alt="")
+                                                                div.products-card-category sale
+                                                    div.products-card-desc
+                                                        div.products-card-name
+                                                            a(href="#") Платье в горох с поясом
+                                                        div.products-card-caption
+                                                            p Описание: Полосатая кофта из полосатого трикотажа, без молнии
+                                                        div.products-card-options.sale-price
+                                                            div.products-card-size
+                                                                div.products-size-grid
+                                                                    div.products-size-item.active 44
+                                                                    div.products-size-item 46
+                                                                    div.products-size-item 48
+                                                                div.products-size-text
+                                                                    p размер
+                                                            div.products-card-price
+                                                                div.products-price-grid
+                                                                    p.price-old 1190 р.
+                                                                    p.price-new 790 р.
+                                                                div.products-in-basket
+                                                                    button.add-cart
+                                                div.products-card-hover
+                                                    div.products-hover-bg
+                                                    div.products-card-photo
+                                                        div.products-card-tag
+                                                            div.products-card-country
+                                                                img(src="icons/italy.svg" alt="")
+                                                            div.products-card-category sale
+                                                        div.products-card-characteristics
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Материал
+                                                                div.products-characteristics-cell
+                                                                    p Хлопок
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Сезон
+                                                                div.products-characteristics-cell
+                                                                    p Лето
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Страна-производитель
+                                                                div.products-characteristics-cell
+                                                                    p Франция
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Длина
+                                                                div.products-characteristics-cell
+                                                                    p Мини
+                                                        div.products-card-more
+                                                            a.orange-link(href="#") Перейти в карточку
+                                        div.swiper-slide
+                                            div.products-card
+                                                div.products-card-info
+                                                    div.products-card-photo
+                                                        a(href='#')
+                                                            div.products-card-bg
+                                                                img(src="img/slider3.jpg" alt="")
+                                                            div.products-card-tag
+                                                                div.products-card-country
+                                                                    img(src="icons/france.svg" alt="")
+                                                                div.products-card-category new
+                                                    div.products-card-desc
+                                                        div.products-card-name
+                                                            a(href="#") Розовое платье
+                                                        div.products-card-caption
+                                                            p Описание: Полосатая кофта из полосатого трикотажа, без молнии
+                                                        div.products-card-options
+                                                            div.products-card-size
+                                                                div.products-size-grid
+                                                                    div.products-size-item.active 44
+                                                                    div.products-size-item 46
+                                                                    div.products-size-item 48
+                                                                div.products-size-text
+                                                                    p размер
+                                                            div.products-card-price
+                                                                div.products-price-grid
+                                                                    p.price-new 790 р.
+                                                                div.products-in-basket
+                                                                    button.add-cart
+                                                div.products-card-hover
+                                                    div.products-hover-bg
+                                                    div.products-card-photo
+                                                        div.products-card-tag
+                                                            div.products-card-country
+                                                                img(src="icons/france.svg" alt="")
+                                                            div.products-card-category new
+                                                        div.products-card-characteristics
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Материал
+                                                                div.products-characteristics-cell
+                                                                    p Хлопок
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Сезон
+                                                                div.products-characteristics-cell
+                                                                    p Лето
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Страна-производитель
+                                                                div.products-characteristics-cell
+                                                                    p Франция
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Длина
+                                                                div.products-characteristics-cell
+                                                                    p Мини
+                                                        div.products-card-more
+                                                            a.orange-link(href="#") Перейти в карточку
+                                        div.swiper-slide
+                                            div.products-card
+                                                div.products-card-info
+                                                    div.products-card-photo
+                                                        a(href='#')
+                                                            div.products-card-bg
+                                                                img(src="img/slider1.jpg" alt="")
+                                                            div.products-card-tag
+                                                                div.products-card-country
+                                                                    img(src="icons/france.svg" alt="")
+                                                                div.products-card-category new
+                                                    div.products-card-desc
+                                                        div.products-card-name
+                                                            a(href="#") Кожаная юбка
+                                                        div.products-card-caption
+                                                            p Описание: Полосатая кофта из полосатого трикотажа, без молнии
+                                                        div.products-card-options
+                                                            div.products-card-size
+                                                                div.products-size-grid
+                                                                    div.products-size-item.active 44
+                                                                div.products-size-text
+                                                                    p размер
+                                                            div.products-card-price
+                                                                div.products-price-grid
+                                                                    p.price-new 790 р.
+                                                                div.products-in-basket
+                                                                    button.add-cart
+                                                div.products-card-hover
+                                                    div.products-hover-bg
+                                                    div.products-card-photo
+                                                        div.products-card-tag
+                                                            div.products-card-country
+                                                                img(src="icons/france.svg" alt="")
+                                                            div.products-card-category new
+                                                        div.products-card-characteristics
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Материал
+                                                                div.products-characteristics-cell
+                                                                    p Хлопок
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Сезон
+                                                                div.products-characteristics-cell
+                                                                    p Лето
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Страна-производитель
+                                                                div.products-characteristics-cell
+                                                                    p Франция
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Длина
+                                                                div.products-characteristics-cell
+                                                                    p Мини
+                                                        div.products-card-more
+                                                            a.orange-link(href="#") Перейти в карточку
+                                div.products-swiper-navigation
+                                    div.swiper-button-prev.products-swiper-btn.products-swiper-prev
+                                    div.swiper-button-next.products-swiper-btn.products-swiper-next
+                            div.products-tabs-item
+                                div.swiper-container.products-tabs-swiper
+                                    div.swiper-wrapper
+                                        div.swiper-slide
+                                            div.products-card
+                                                div.products-card-info
+                                                    div.products-card-photo
+                                                        a(href='#')
+                                                            div.products-card-bg
+                                                                img(src="img/slider2.jpg" alt="")
+                                                            div.products-card-tag
+                                                                div.products-card-country
+                                                                    img(src="icons/italy.svg" alt="")
+                                                                div.products-card-category sale
+                                                    div.products-card-desc
+                                                        div.products-card-name
+                                                            a(href="#") Платье в горох с поясом
+                                                        div.products-card-caption
+                                                            p Описание: Полосатая кофта из полосатого трикотажа, без молнии
+                                                        div.products-card-options.sale-price
+                                                            div.products-card-size
+                                                                div.products-size-grid
+                                                                    div.products-size-item.active 44
+                                                                    div.products-size-item 46
+                                                                    div.products-size-item 48
+                                                                div.products-size-text
+                                                                    p размер
+                                                            div.products-card-price
+                                                                div.products-price-grid
+                                                                    p.price-old 1190 р.
+                                                                    p.price-new 790 р.
+                                                                div.products-in-basket
+                                                                    button.add-cart
+                                                div.products-card-hover
+                                                    div.products-hover-bg
+                                                    div.products-card-photo
+                                                        div.products-card-tag
+                                                            div.products-card-country
+                                                                img(src="icons/italy.svg" alt="")
+                                                            div.products-card-category sale
+                                                        div.products-card-characteristics
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Материал
+                                                                div.products-characteristics-cell
+                                                                    p Хлопок
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Сезон
+                                                                div.products-characteristics-cell
+                                                                    p Лето
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Страна-производитель
+                                                                div.products-characteristics-cell
+                                                                    p Франция
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Длина
+                                                                div.products-characteristics-cell
+                                                                    p Мини
+                                                        div.products-card-more
+                                                            a.orange-link(href="#") Перейти в карточку
+                                        div.swiper-slide
+                                            div.products-card
+                                                div.products-card-info
+                                                    div.products-card-photo
+                                                        a(href='#')
+                                                            div.products-card-bg
+                                                                img(src="img/slider3.jpg" alt="")
+                                                            div.products-card-tag
+                                                                div.products-card-country
+                                                                    img(src="icons/france.svg" alt="")
+                                                                div.products-card-category new
+                                                    div.products-card-desc
+                                                        div.products-card-name
+                                                            a(href="#") Розовое платье
+                                                        div.products-card-caption
+                                                            p Описание: Полосатая кофта из полосатого трикотажа, без молнии
+                                                        div.products-card-options
+                                                            div.products-card-size
+                                                                div.products-size-grid
+                                                                    div.products-size-item.active 44
+                                                                    div.products-size-item 46
+                                                                    div.products-size-item 48
+                                                                div.products-size-text
+                                                                    p размер
+                                                            div.products-card-price
+                                                                div.products-price-grid
+                                                                    p.price-new 790 р.
+                                                                div.products-in-basket
+                                                                    button.add-cart
+                                                div.products-card-hover
+                                                    div.products-hover-bg
+                                                    div.products-card-photo
+                                                        div.products-card-tag
+                                                            div.products-card-country
+                                                                img(src="icons/france.svg" alt="")
+                                                            div.products-card-category new
+                                                        div.products-card-characteristics
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Материал
+                                                                div.products-characteristics-cell
+                                                                    p Хлопок
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Сезон
+                                                                div.products-characteristics-cell
+                                                                    p Лето
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Страна-производитель
+                                                                div.products-characteristics-cell
+                                                                    p Франция
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Длина
+                                                                div.products-characteristics-cell
+                                                                    p Мини
+                                                        div.products-card-more
+                                                            a.orange-link(href="#") Перейти в карточку
+                                        div.swiper-slide
+                                            div.products-card
+                                                div.products-card-info
+                                                    div.products-card-photo
+                                                        a(href='#')
+                                                            div.products-card-bg
+                                                                img(src="img/slider1.jpg" alt="")
+                                                            div.products-card-tag
+                                                                div.products-card-country
+                                                                    img(src="icons/france.svg" alt="")
+                                                                div.products-card-category new
+                                                    div.products-card-desc
+                                                        div.products-card-name
+                                                            a(href="#") Кожаная юбка
+                                                        div.products-card-caption
+                                                            p Описание: Полосатая кофта из полосатого трикотажа, без молнии
+                                                        div.products-card-options
+                                                            div.products-card-size
+                                                                div.products-size-grid
+                                                                    div.products-size-item.active 44
+                                                                div.products-size-text
+                                                                    p размер
+                                                            div.products-card-price
+                                                                div.products-price-grid
+                                                                    p.price-new 790 р.
+                                                                div.products-in-basket
+                                                                    button.add-cart
+                                                div.products-card-hover
+                                                    div.products-hover-bg
+                                                    div.products-card-photo
+                                                        div.products-card-tag
+                                                            div.products-card-country
+                                                                img(src="icons/france.svg" alt="")
+                                                            div.products-card-category new
+                                                        div.products-card-characteristics
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Материал
+                                                                div.products-characteristics-cell
+                                                                    p Хлопок
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Сезон
+                                                                div.products-characteristics-cell
+                                                                    p Лето
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Страна-производитель
+                                                                div.products-characteristics-cell
+                                                                    p Франция
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Длина
+                                                                div.products-characteristics-cell
+                                                                    p Мини
+                                                        div.products-card-more
+                                                            a.orange-link(href="#") Перейти в карточку
+                                        div.swiper-slide
+                                            div.products-card
+                                                div.products-card-info
+                                                    div.products-card-photo
+                                                        a(href='#')
+                                                            div.products-card-bg
+                                                                img(src="img/slider4.jpg" alt="")
+                                                            div.products-card-tag
+                                                                div.products-card-country
+                                                                    img(src="icons/france.svg" alt="")
+                                                                div.products-card-category new
+                                                    div.products-card-desc
+                                                        div.products-card-name
+                                                            a(href="#") Полосатая кофта
+                                                        div.products-card-caption
+                                                            p Описание: Полосатая кофта из полосатого трикотажа, без молнии
+                                                        div.products-card-options
+                                                            div.products-card-size
+                                                                div.products-size-grid
+                                                                    div.products-size-item.active 44
+                                                                div.products-size-text
+                                                                    p размер
+                                                            div.products-card-price
+                                                                div.products-price-grid
+                                                                    p.price-new 790 р.
+                                                                div.products-in-basket
+                                                                    button.add-cart
+                                                div.products-card-hover
+                                                    div.products-hover-bg
+                                                    div.products-card-photo
+                                                        div.products-card-tag
+                                                            div.products-card-country
+                                                                img(src="icons/france.svg" alt="")
+                                                            div.products-card-category new
+                                                        div.products-card-characteristics
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Материал
+                                                                div.products-characteristics-cell
+                                                                    p Хлопок
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Сезон
+                                                                div.products-characteristics-cell
+                                                                    p Лето
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Страна-производитель
+                                                                div.products-characteristics-cell
+                                                                    p Франция
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Длина
+                                                                div.products-characteristics-cell
+                                                                    p Мини
+                                                        div.products-card-more
+                                                            a.orange-link(href="#") Перейти в карточку
+                                div.products-swiper-navigation
+                                    div.swiper-button-prev.products-swiper-btn.products-swiper-prev
+                                    div.swiper-button-next.products-swiper-btn.products-swiper-next
+                            div.products-tabs-item
+                                div.swiper-container.products-tabs-swiper
+                                    div.swiper-wrapper
+                                        div.swiper-slide
+                                            div.products-card
+                                                div.products-card-info
+                                                    div.products-card-photo
+                                                        a(href='#')
+                                                            div.products-card-bg
+                                                                img(src="img/slider4.jpg" alt="")
+                                                            div.products-card-tag
+                                                                div.products-card-country
+                                                                    img(src="icons/france.svg" alt="")
+                                                                div.products-card-category new
+                                                    div.products-card-desc
+                                                        div.products-card-name
+                                                            a(href="#") Полосатая кофта
+                                                        div.products-card-caption
+                                                            p Описание: Полосатая кофта из полосатого трикотажа, без молнии
+                                                        div.products-card-options
+                                                            div.products-card-size
+                                                                div.products-size-grid
+                                                                    div.products-size-item.active 44
+                                                                div.products-size-text
+                                                                    p размер
+                                                            div.products-card-price
+                                                                div.products-price-grid
+                                                                    p.price-new 790 р.
+                                                                div.products-in-basket
+                                                                    button.add-cart
+                                                div.products-card-hover
+                                                    div.products-hover-bg
+                                                    div.products-card-photo
+                                                        div.products-card-tag
+                                                            div.products-card-country
+                                                                img(src="icons/france.svg" alt="")
+                                                            div.products-card-category new
+                                                        div.products-card-characteristics
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Материал
+                                                                div.products-characteristics-cell
+                                                                    p Хлопок
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Сезон
+                                                                div.products-characteristics-cell
+                                                                    p Лето
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Страна-производитель
+                                                                div.products-characteristics-cell
+                                                                    p Франция
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Длина
+                                                                div.products-characteristics-cell
+                                                                    p Мини
+                                                        div.products-card-more
+                                                            a.orange-link(href="#") Перейти в карточку
+                                        div.swiper-slide
+                                            div.products-card
+                                                div.products-card-info
+                                                    div.products-card-photo
+                                                        a(href='#')
+                                                            div.products-card-bg
+                                                                img(src="img/slider2.jpg" alt="")
+                                                            div.products-card-tag
+                                                                div.products-card-country
+                                                                    img(src="icons/italy.svg" alt="")
+                                                                div.products-card-category sale
+                                                    div.products-card-desc
+                                                        div.products-card-name
+                                                            a(href="#") Платье в горох с поясом
+                                                        div.products-card-caption
+                                                            p Описание: Полосатая кофта из полосатого трикотажа, без молнии
+                                                        div.products-card-options.sale-price
+                                                            div.products-card-size
+                                                                div.products-size-grid
+                                                                    div.products-size-item.active 44
+                                                                    div.products-size-item 46
+                                                                    div.products-size-item 48
+                                                                div.products-size-text
+                                                                    p размер
+                                                            div.products-card-price
+                                                                div.products-price-grid
+                                                                    p.price-old 1190 р.
+                                                                    p.price-new 790 р.
+                                                                div.products-in-basket
+                                                                    button.add-cart
+                                                div.products-card-hover
+                                                    div.products-hover-bg
+                                                    div.products-card-photo
+                                                        div.products-card-tag
+                                                            div.products-card-country
+                                                                img(src="icons/italy.svg" alt="")
+                                                            div.products-card-category sale
+                                                        div.products-card-characteristics
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Материал
+                                                                div.products-characteristics-cell
+                                                                    p Хлопок
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Сезон
+                                                                div.products-characteristics-cell
+                                                                    p Лето
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Страна-производитель
+                                                                div.products-characteristics-cell
+                                                                    p Франция
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Длина
+                                                                div.products-characteristics-cell
+                                                                    p Мини
+                                                        div.products-card-more
+                                                            a.orange-link(href="#") Перейти в карточку
+                                        div.swiper-slide
+                                            div.products-card
+                                                div.products-card-info
+                                                    div.products-card-photo
+                                                        a(href='#')
+                                                            div.products-card-bg
+                                                                img(src="img/slider1.jpg" alt="")
+                                                            div.products-card-tag
+                                                                div.products-card-country
+                                                                    img(src="icons/france.svg" alt="")
+                                                                div.products-card-category new
+                                                    div.products-card-desc
+                                                        div.products-card-name
+                                                            a(href="#") Кожаная юбка
+                                                        div.products-card-caption
+                                                            p Описание: Полосатая кофта из полосатого трикотажа, без молнии
+                                                        div.products-card-options
+                                                            div.products-card-size
+                                                                div.products-size-grid
+                                                                    div.products-size-item.active 44
+                                                                div.products-size-text
+                                                                    p размер
+                                                            div.products-card-price
+                                                                div.products-price-grid
+                                                                    p.price-new 790 р.
+                                                                div.products-in-basket
+                                                                    button.add-cart
+                                                div.products-card-hover
+                                                    div.products-hover-bg
+                                                    div.products-card-photo
+                                                        div.products-card-tag
+                                                            div.products-card-country
+                                                                img(src="icons/france.svg" alt="")
+                                                            div.products-card-category new
+                                                        div.products-card-characteristics
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Материал
+                                                                div.products-characteristics-cell
+                                                                    p Хлопок
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Сезон
+                                                                div.products-characteristics-cell
+                                                                    p Лето
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Страна-производитель
+                                                                div.products-characteristics-cell
+                                                                    p Франция
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Длина
+                                                                div.products-characteristics-cell
+                                                                    p Мини
+                                                        div.products-card-more
+                                                            a.orange-link(href="#") Перейти в карточку
+                                        div.swiper-slide
+                                            div.products-card
+                                                div.products-card-info
+                                                    div.products-card-photo
+                                                        a(href='#')
+                                                            div.products-card-bg
+                                                                img(src="img/slider3.jpg" alt="")
+                                                            div.products-card-tag
+                                                                div.products-card-country
+                                                                    img(src="icons/france.svg" alt="")
+                                                                div.products-card-category new
+                                                    div.products-card-desc
+                                                        div.products-card-name
+                                                            a(href="#") Розовое платье
+                                                        div.products-card-caption
+                                                            p Описание: Полосатая кофта из полосатого трикотажа, без молнии
+                                                        div.products-card-options
+                                                            div.products-card-size
+                                                                div.products-size-grid
+                                                                    div.products-size-item.active 44
+                                                                    div.products-size-item 46
+                                                                    div.products-size-item 48
+                                                                div.products-size-text
+                                                                    p размер
+                                                            div.products-card-price
+                                                                div.products-price-grid
+                                                                    p.price-new 790 р.
+                                                                div.products-in-basket
+                                                                    button.add-cart
+                                                div.products-card-hover
+                                                    div.products-hover-bg
+                                                    div.products-card-photo
+                                                        div.products-card-tag
+                                                            div.products-card-country
+                                                                img(src="icons/france.svg" alt="")
+                                                            div.products-card-category new
+                                                        div.products-card-characteristics
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Материал
+                                                                div.products-characteristics-cell
+                                                                    p Хлопок
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Сезон
+                                                                div.products-characteristics-cell
+                                                                    p Лето
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Страна-производитель
+                                                                div.products-characteristics-cell
+                                                                    p Франция
+                                                            div.products-characteristics-row
+                                                                div.products-characteristics-cell
+                                                                    p Длина
+                                                                div.products-characteristics-cell
+                                                                    p Мини
+                                                        div.products-card-more
+                                                            a.orange-link(href="#") Перейти в карточку
+                                div.products-swiper-navigation
+                                    div.swiper-button-prev.products-swiper-btn.products-swiper-prev
+                                    div.swiper-button-next.products-swiper-btn.products-swiper-next
