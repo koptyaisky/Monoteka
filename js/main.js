@@ -81,26 +81,51 @@ $(document).ready(function() {
         $(this).addClass('active').siblings().removeClass('active');
     });
 
+    /*
+        показывать/скрывать результаты введного слова
+     */
+    $("#open-search").click(function() {
+        $(".layout-bg, .search-block").addClass('show');
+    });
+    $(".close-search-block").click(function() {
+        $(".layout-bg, .search-block, .search-form-result").removeClass('show');
+        $(".search-form-input").val("");
+    });
+    $(document).on('input', '.search-form-input', function () {
+        var valSearch = $(this).val();
+
+        if (valSearch !== '') {
+            $('.search-form-result').addClass('show');
+        } else {
+            $('.search-form-result').removeClass('show');
+        }
+    });
+
+    $('.burger').click(function() {
+        $('.header-left .header-menu').addClass('open');
+        $('.layout-bg').addClass('show');
+        bodyScrollLock.disableBodyScroll(document.querySelector(".header-left .header-menu"));
+    });
+    $('.close-mobile-menu').click(function() {
+        $('.header-left .header-menu').removeClass('open');
+        $('.layout-bg').removeClass('show');
+        bodyScrollLock.enableBodyScroll(document.querySelector(".header-left .header-menu"));
+    });
+
+    $('.layout-bg').click(function() {
+        $(".layout-bg").removeClass('show');
+        if($('.search-block').hasClass('show')) {
+            $('.search-block, .search-form-result').removeClass('show');
+            $(".search-form-input").val("");
+        }
+        if($('.header-left .header-menu').hasClass('open')) {
+            $('.header-left .header-menu').removeClass('open');
+            bodyScrollLock.enableBodyScroll(document.querySelector(".header-left .header-menu"));
+        }
+        //$(".layout-bg, .search-block, .search-form-result").removeClass('show');
 
 
-    // $('.tabs-list').on('click', '.tabs-item:not(.active)', function(e) {
-    //     $(this)
-    //         .addClass('active title-line').siblings().removeClass('active title-line')
-    //         .closest('section').find('.tabs-content').removeClass('active').eq($(this).index()).addClass('active');
-    //
-    //     var wrapper = $(this).closest('.tabs-list').get()[0];
-    //
-    //     var tabsArray = Array.isArray(instance);
-    //     if(tabsArray) {
-    //         instance.forEach(function (v, i) {
-    //             var tmp = $(v.getElements('target')).get()[0];
-    //             if (tmp === wrapper) {
-    //                 v.scroll($(wrapper).find('.tabs-item.active'), 400);
-    //             }
-    //         });
-    //     } else {
-    //         instance.scroll($(wrapper).find('.tabs-item.active'), 400);
-    //     }
-    // });
+    });
+
 
 });

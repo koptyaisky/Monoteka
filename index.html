@@ -12,6 +12,7 @@
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
     <script type="text/javascript" src="js/jquery.overlayScrollbars.min.js"></script>
+    <script type="text/javascript" src="js/bodyScrollLock.js"></script>
     <script type="text/javascript" src="dist/main.js"></script>
   </head>
   <body>
@@ -26,9 +27,18 @@
                 </div>
                 <div class="header-catalog"><a id="full-catalog" href="#"><span>каталог</span><span class="full-catalog-arrow"></span></a></div>
                 <div class="header-menu">
+                  <div class="close-mobile-menu cross-icon"></div>
+                  <ul class="mobile">
+                    <li><a href="#">каталог</a></li>
+                  </ul>
                   <ul>
                     <li><a href="#">компания</a></li>
                     <li><a href="#">новости</a></li>
+                  </ul>
+                  <ul class="mobile">
+                    <li><a href="#">Поставщикам</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">кабинет</a></li>
                   </ul>
                 </div>
               </div>
@@ -1422,6 +1432,24 @@
         </section>
       </div>
       <footer></footer>
+      <div class="layout-bg"></div>
+      <div class="search-block">
+        <div class="container">
+          <div class="close-search-block cross-icon"></div>
+          <form id="search-form">
+            <div class="search-form-row">
+              <input class="search-form-input" type="text" placeholder="Поиск по сайту"><span class="search-form-icon"></span>
+            </div>
+            <div class="search-form-result">
+              <ul class="search-find-list">
+                <li><a href="#">Шерсть</a></li>
+                <li><a href="#">Шелк</a></li>
+                <li><a href="#">Шуба</a></li>
+              </ul>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>

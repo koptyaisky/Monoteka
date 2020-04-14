@@ -161,6 +161,12 @@
   .products-swiper-navigation
     top: -51px
 
+  .products-card-options.sale-price .products-card-size
+    margin-top: 14px
+
+  .products-card-options.sale-price .products-price-grid
+    margin-top: 0
+
 
     
 
@@ -288,15 +294,6 @@
   .tabs-caption-item
     font-size: 28px
 
-  .products-card-options.sale-price .products-card-size
-    margin-top: 11px
-
-  .products-card-options.sale-price .products-price-grid
-    margin-top: 7px
-
-  .products-card-size
-    margin-top: 13px
-
   .collection-nav-link
     font-size: 18px
 
@@ -351,7 +348,7 @@
   .collection-swiper-bg, .collection-banner-bg
     height: 420px
 
-  .header-catalog, .header-menu
+  .header-catalog
     display: none
 
   .header-burger
@@ -363,6 +360,54 @@
   .header-search
     padding: 0
 
+  .search-block
+    padding: 45px 0 50px
+
+  #search-form
+    padding: 0 15px
+
+  .search-find-list a
+    font-size: 16px
+    line-height: 20px
+
+  .header-left .header-menu
+    display: block
+    position: fixed
+    left: -400px
+    top: 0
+    bottom: 0
+    width: 290px
+    overflow: hidden
+    background: #ffffff
+    z-index: 10
+    padding: 60px 0 20px
+    transition: all 0.4s ease
+    overflow-y: auto
+
+    &.open
+      left: 0
+      //transition: all 0.5s ease
+
+  .header-menu ul.mobile, .header-menu > ul
+    display: block
+
+  .header-left .header-menu > ul > li
+    padding: 15px 30px
+    border-bottom: 1px solid rgba(0,0,0,0.1)
+
+  .header-menu > ul > li > a
+    font-size: 22px
+
+  .header-right .header-menu
+    display: none
+
+  .close-mobile-menu
+    display: block
+    position: absolute
+    left: 20px
+    top: 15px
+    width: 25px
+    height: 25px
 
 
 @media screen and (max-width: 991px)
@@ -577,6 +622,40 @@
   .products-card-options.sale-price .products-price-grid
     margin-top: 10px
 
+  #search-form
+    padding: 0 10px
+
+  .search-form-icon
+    width: 15px
+    height: 15px
+
+  .search-form-input
+    height: 35px
+    padding: 0 25px
+
+  .search-form-result
+    padding-left: 25px
+
+  .close-search-block::before, .close-search-block::after
+    height: 1px
+
+  .header-left .header-menu
+    padding: 45px 0 20px
+
+  .close-mobile-menu
+    left: 15px
+    top: 15px
+    width: 20px
+    height: 20px
+
+  .header-left .header-menu > ul > li
+    padding: 13px 20px
+
+  .header-menu > ul > li > a
+    font-size: 20px
+
+
+
 @media screen and (max-width: 575px)
   .header-logo
     width: 100px
@@ -670,8 +749,11 @@
   .products-card-caption
     font-size: 16px
 
-  .products-card-name a
-    color: gray
+  #search-form
+    padding: 0
+
+  .header-left .header-menu
+    width: 280px
 
 
 
@@ -680,7 +762,9 @@
     font-size: 24px
 
   .products-size-item
-    height: 18px
+    height: 16px
+    width: 42px
+    font-size: 14px
 
   .add-cart
     width: 24px
@@ -697,6 +781,9 @@
 
   .products-card-caption
     font-size: 14px
+
+  .products-card-size
+    max-width: 65%
 
 @media screen and (min-width: 1200px)
   .products-card-desc, .products-card-name a
@@ -769,5 +856,7 @@
   #full-catalog:hover
     background: #dc6e0b
 
+  .search-find-list a:hover
+    color: $orange
 
 
