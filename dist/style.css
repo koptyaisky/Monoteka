@@ -1807,29 +1807,30 @@ footer {
     padding-right: 0;
   }
 
-  .tabs-caption-item {
-    font-size: 24px;
-  }
-
   .products-card-desc {
     padding-bottom: 0;
   }
 
-  .price-old {
-    font-size: 16px;
-  }
-
-  .price-new {
-    font-size: 26px;
-  }
-
   .products-size-item {
-    width: 36px;
+    width: 42px;
+    font-size: 14px;
   }
 
-  .add-cart {
-    width: 22px;
-    height: 20px;
+  .products-size-text {
+    margin-top: 9px;
+    font-size: 18px;
+  }
+
+  .products-card-options.sale-price .products-card-size {
+    margin-top: 15px;
+  }
+
+  .products-card-size {
+    margin-top: 15px;
+  }
+
+  .products-card-options.sale-price .products-price-grid {
+    margin-top: 10px;
   }
 }
 
@@ -1860,7 +1861,7 @@ footer {
   }
 
   .collection-swiper-bg {
-    height: 260px;
+    height: 290px;
   }
 
   .collection-nav-item {
@@ -1923,6 +1924,12 @@ footer {
 
   .header-cart {
     padding-left: 13px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .tabs-caption-item {
+    font-size: 24px;
   }
 }
 
