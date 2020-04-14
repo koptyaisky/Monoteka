@@ -4,12 +4,21 @@ $(document).ready(function() {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        pagination: {
+            el: '.swiper-pagination',
+        },
         loop: true,
         speed: 1000,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
+        longSwipes: false,
+        // autoplay: {
+        //     delay: 3000,
+        //     disableOnInteraction: false,
+        // },
+        breakpoints: {
+            576: {
+                speed: 800
+            }
+        }
     });
 
 
@@ -27,29 +36,71 @@ $(document).ready(function() {
             loop: true,
             slidesPerView: 4,
             observer: true,
-            observeParents: true
-            // breakpoints: {
-            //     1200: {
-            //         slidesPerView: 3
-            //     },
-            //     1024: {
-            //         slidesPerView: 2
-            //     },
-            //     640: {
-            //         slidesPerView: 1
-            //     }
-            // }
+            observeParents: true,
+            breakpoints: {
+                1200: {
+                    slidesPerView: 4
+                },
+                992: {
+                    slidesPerView: 3
+                },
+                576: {
+                    slidesPerView: 2
+                },
+                320: {
+                    slidesPerView: 1
+                }
+            }
         });
     });
+
+    var instance = $('.products-tabs-caption').overlayScrollbars ({
+        className: "os-theme-dark",
+    }).overlayScrollbars();
 
     $('.products-tabs-caption').on('click', 'li:not(.active)', function() {
         $(this)
             .addClass('active').siblings().removeClass('active')
             .closest('.main-products-tabs').find('.products-tabs-grid').find('.products-tabs-item').removeClass('active').eq($(this).index()).addClass('active');
+        var wrapper = $(this).closest('.products-tabs-caption').get()[0];
+
+        var tabsArray = Array.isArray(instance);
+        if(tabsArray) {
+            instance.forEach(function (v, i) {
+                var tmp = $(v.getElements('target')).get()[0];
+                if (tmp === wrapper) {
+                    v.scroll($(wrapper).find('.tabs-caption-item.active'), 400);
+                }
+            });
+        } else {
+            instance.scroll($(wrapper).find('.tabs-caption-item.active'), 400);
+        }
     });
 
     $('.products-size-grid').on('click', '.products-size-item:not(.active)', function() {
         $(this).addClass('active').siblings().removeClass('active');
     });
+
+
+
+    // $('.tabs-list').on('click', '.tabs-item:not(.active)', function(e) {
+    //     $(this)
+    //         .addClass('active title-line').siblings().removeClass('active title-line')
+    //         .closest('section').find('.tabs-content').removeClass('active').eq($(this).index()).addClass('active');
+    //
+    //     var wrapper = $(this).closest('.tabs-list').get()[0];
+    //
+    //     var tabsArray = Array.isArray(instance);
+    //     if(tabsArray) {
+    //         instance.forEach(function (v, i) {
+    //             var tmp = $(v.getElements('target')).get()[0];
+    //             if (tmp === wrapper) {
+    //                 v.scroll($(wrapper).find('.tabs-item.active'), 400);
+    //             }
+    //         });
+    //     } else {
+    //         instance.scroll($(wrapper).find('.tabs-item.active'), 400);
+    //     }
+    // });
 
 });

@@ -7,9 +7,11 @@
     <title>Главная</title>
     <link rel="shortcut icon" href="" type="image/ico">
     <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/OverlayScrollbars.min.css">
     <link rel="stylesheet" type="text/css" href="dist/style.css">
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/jquery.overlayScrollbars.min.js"></script>
     <script type="text/javascript" src="dist/main.js"></script>
   </head>
   <body>
@@ -19,7 +21,10 @@
           <div class="container">
             <div class="header-content">
               <div class="header-left">
-                <div class="header-catalog"><a href="#">каталог</a></div>
+                <div class="header-burger">
+                  <div class="burger"><span></span></div>
+                </div>
+                <div class="header-catalog"><a id="full-catalog" href="#"><span>каталог</span><span class="full-catalog-arrow"></span></a></div>
                 <div class="header-menu">
                   <ul>
                     <li><a href="#">компания</a></li>
@@ -86,6 +91,7 @@
                       </div>
                       <div class="swiper-button-prev collection-swiper-btn collection-swiper-prev"></div>
                       <div class="swiper-button-next collection-swiper-btn collection-swiper-next"></div>
+                      <div class="swiper-pagination collection-swiper-pagination"></div>
                     </div>
                   </div>
                   <div class="collection-banner-nav">
@@ -153,9 +159,9 @@
               <div class="main-products-content">
                 <div class="main-products-tabs">
                   <ul class="products-tabs-caption">
-                    <li class="active">Лучшие предложения недели</li>
-                    <li>Новинки</li>
-                    <li>Рекомендуем</li>
+                    <li class="tabs-caption-item active">Лучшие предложения недели</li>
+                    <li class="tabs-caption-item">Новинки</li>
+                    <li class="tabs-caption-item">Рекомендуем</li>
                   </ul>
                   <div class="products-tabs-grid">
                     <div class="products-tabs-item active">
