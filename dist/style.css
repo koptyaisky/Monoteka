@@ -1935,8 +1935,16 @@ footer {
     height: 24px;
   }
 
+  .price-new {
+    font-size: 32px;
+  }
+
+  .price-old {
+    font-size: 20px;
+  }
+
   .products-card-name a {
-    color: green;
+    color: blue;
   }
 }
 
@@ -1952,6 +1960,14 @@ footer {
   .add-cart {
     width: 24px;
     height: 22px;
+  }
+
+  .price-new {
+    font-size: 28px;
+  }
+
+  .price-old {
+    font-size: 18px;
   }
 }
 
