@@ -1943,8 +1943,13 @@ footer {
     font-size: 20px;
   }
 
-  .products-card-name a {
-    color: blue;
+  .products-card-name {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  .products-card-caption {
+    font-size: 16px;
   }
 }
 
@@ -1968,6 +1973,14 @@ footer {
 
   .price-old {
     font-size: 18px;
+  }
+
+  .products-card-name {
+    font-size: 22px;
+  }
+
+  .products-card-caption {
+    font-size: 14px;
   }
 }
 
