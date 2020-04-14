@@ -122,9 +122,15 @@ $(document).ready(function() {
             $('.header-left .header-menu').removeClass('open');
             bodyScrollLock.enableBodyScroll(document.querySelector(".header-left .header-menu"));
         }
-        //$(".layout-bg, .search-block, .search-form-result").removeClass('show');
+    });
 
-
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if  (scroll > 5) {
+            $('.header-section').addClass('on-scroll');
+        } else {
+            $('.header-section').removeClass('on-scroll');
+        }
     });
 
 

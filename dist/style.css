@@ -246,6 +246,7 @@ svg {
 
 .all-content {
   flex: 1 0 auto;
+  padding-top: 92px;
 }
 
 footer {
@@ -254,6 +255,18 @@ footer {
 
 .header-section {
   padding: 23px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: #fff;
+  transition: all 0.45s ease;
+}
+
+.header-section.on-scroll {
+  padding: 5px 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .container {
@@ -1302,6 +1315,10 @@ footer {
     padding: 10px;
     font-size: 14px;
   }
+
+  .all-content {
+    padding-top: 82px;
+  }
 }
 
 @media screen and (max-width: 1439px) {
@@ -1590,6 +1607,10 @@ footer {
   .products-swiper-navigation {
     top: -51px;
   }
+
+  .all-content {
+    padding-top: 74px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1750,6 +1771,14 @@ footer {
     width: 25px;
     height: 25px;
   }
+
+  .all-content {
+    padding-top: 57px;
+  }
+
+  .header-section.on-scroll {
+    padding: 7px 0;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1858,6 +1887,10 @@ footer {
 
   .collection-nav-icon.shirt {
     background-size: 38px auto;
+  }
+
+  .all-content {
+    padding-top: 55px;
   }
 }
 
@@ -2044,8 +2077,8 @@ footer {
     padding-left: 25px;
   }
 
-  .close-search-block::before,
-  .close-search-block::after {
+  .cross-icon::before,
+  .cross-icon::after {
     height: 1px;
   }
 
@@ -2066,6 +2099,10 @@ footer {
 
   .header-menu > ul > li > a {
     font-size: 20px;
+  }
+
+  .all-content {
+    padding-top: 53px;
   }
 }
 
@@ -2195,6 +2232,10 @@ footer {
 
   .header-left .header-menu {
     width: 280px;
+  }
+
+  .all-content {
+    padding-top: 50px;
   }
 }
 

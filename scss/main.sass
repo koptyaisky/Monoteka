@@ -80,12 +80,24 @@ svg
 
 .all-content
   flex: 1 0 auto
+  padding-top: 92px
 
 footer
   flex: 0 0 auto
 
 .header-section
   padding: 23px 0
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 100
+  background: #fff
+  transition: all 0.45s ease
+
+  &.on-scroll
+    padding: 5px 0
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2)
 
 .container
   max-width: 1660px
