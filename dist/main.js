@@ -121,12 +121,12 @@ $(document).ready(function() {
     $('.burger').click(function() {
         $('.header-menu.mobile-menu').addClass('open');
         $('.layout-bg').addClass('show');
-        bodyScrollLock.disableBodyScroll(document.querySelector(".header-left .header-menu"));
+        bodyScrollLock.disableBodyScroll(document.querySelector(".header-menu.mobile-menu"));
     });
     $('.close-mobile-menu').click(function() {
         $('.header-menu.mobile-menu').removeClass('open');
         $('.layout-bg').removeClass('show');
-        bodyScrollLock.enableBodyScroll(document.querySelector(".header-left .header-menu"));
+        bodyScrollLock.enableBodyScroll(document.querySelector(".header-menu.mobile-menu"));
     });
 
     /*
