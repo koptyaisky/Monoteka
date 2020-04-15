@@ -86,17 +86,14 @@ footer
   flex: 0 0 auto
 
 .header-section
-  padding: 23px 0
   position: fixed
   left: 0
   top: 0
   width: 100%
-  z-index: 100
+  z-index: 5
   background: #fff
-  transition: all 0.45s ease
 
   &.on-scroll
-    padding: 5px 0
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.2)
 
 .container
@@ -146,7 +143,7 @@ footer
       text-transform: uppercase
       transition: all 0.2s ease-in-out
 
-  ul.mobile
+  &.mobile-menu
     display: none
 
 .header-search
@@ -728,7 +725,14 @@ footer
     transform: translate3d(0, 0, 0)
 
 
-#full-catalog
+.full-catalog
+  display: block
+  padding: 23px 0
+  cursor: pointer
+  transition: all 0.45s ease
+
+
+.full-catalog-btn
   display: flex
   justify-content: space-between
   align-items: center
@@ -742,7 +746,6 @@ footer
   background: $orange
   border: 3px solid $white
   transition: all 0.3s ease
-  cursor: pointer
 
   .full-catalog-arrow
     width: 10px
@@ -750,7 +753,7 @@ footer
     background: url("../icons/arrow-down.svg") no-repeat center
     background-size: contain
     display: inline-block
-
+    transition: all 0.4s ease
 
 .header-catalog
   padding-right: 40px
@@ -812,7 +815,7 @@ footer
   margin-bottom: 100px
 
 .search-block
-  position: absolute
+  position: fixed
   left: 0
   top: -300px
   width: 100%
@@ -924,3 +927,140 @@ footer
 
 .close-mobile-menu
   display: none
+
+.popup
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  z-index: 8
+  background: rgba(0,0,0,0.96)
+  justify-content: center
+  align-items: center
+  display: none
+
+  &.show-modal
+    display: flex
+
+.popup-added-title
+  text-align: center
+  color: $white
+  font-size: 36px
+  font-weight: $fw_700
+  margin-bottom: 35px
+
+.actions-added-cart
+  display: flex
+  justify-content: center
+  align-items: center
+
+.actions-added-btn
+  display: inline-block
+  min-width: 160px
+  min-height: 46px
+  padding: 11px 25px
+  text-align: center
+  font-size: 18px
+  text-transform: uppercase
+  border: 3px solid $white
+  color: $white
+  transition: all 0.3s ease
+  cursor: pointer
+  margin: 0 15px
+  line-height: 1
+
+  &.actions-order
+    background: $orange
+
+  &.actions-continue
+    background: $black
+
+
+.swiper-button-next, .swiper-button-prev
+  z-index: 2
+
+.large-catalog
+  position: fixed
+  left: 0
+  top: 0
+  margin-top: 92px
+  z-index: -1
+  background: white
+  width: 100%
+  border-top: 1px solid rgba(0,0,0,0.1)
+  padding: 30px 30px 70px
+  opacity: 0
+  visibility: hidden
+  transition: opacity 0s ease, margin-top 0.45s ease
+
+.large-catalog-grid
+  width: 100%
+  column-count: 4
+  -moz-column-count: 4
+  -webkit-column-count: 4
+  column-gap: 0
+  -moz-column-gap: 0
+  -webkit-column-gap: 0
+  display: block
+  max-width: 60%
+  position: relative
+  z-index: 3
+
+.large-catalog-item
+  width: 100%
+  -moz-column-fill: balance
+  break-inside: avoid-column
+  -webkit-column-break-inside: avoid
+  -moz-column-break-inside: avoid
+  -o-column-break-inside: avoid
+  column-break-inside: avoid
+  page-break-inside: avoid
+  display: table
+  padding: 7px 0
+
+  & > a
+    color: $black
+    font-size: 20px
+    line-height: 22px
+    display: inline-block
+    transition: all 0.2s ease-in-out
+
+    &.sale
+      font-weight: $fw_700
+      color: $orange
+      border-bottom: 2px solid #ef7f1a
+
+    &:hover
+      color: $orange
+
+.large-catalog-bg
+  position: fixed
+  height: 100%
+  background: rgba(0, 0, 0, 0)
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 3
+  opacity: 0
+  visibility: hidden
+  transition: all .2s,background-color 0.4s
+
+header.open-catalog
+  .large-catalog-bg
+    opacity: 1
+    visibility: visible
+    background: rgba(0,0,0,0.4)
+
+  .large-catalog
+    z-index: 4
+    opacity: 1
+    visibility: visible
+    transition: opacity 0.3s ease
+
+.header-section.on-scroll
+  .full-catalog
+    padding: 5px 0
+
+  .large-catalog
+    margin-top: 56px

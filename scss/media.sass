@@ -9,8 +9,11 @@
 
 
 @media screen and (max-width: 1639px)
-  .header-section
+  .full-catalog
     padding: 18px 0
+
+  .large-catalog
+    margin-top: 82px
 
   .header-left .header-menu > ul > li
     padding: 0 30px
@@ -177,13 +180,19 @@
   .collection-swiper-bg, .collection-banner-bg
     height: 480px
 
-  .header-section
+  .full-catalog
     padding: 14px 0
+
+  .large-catalog
+    margin-top: 74px
+
+  .large-catalog-grid
+    max-width: 75%
 
   .header-catalog
     padding-right: 25px
 
-  #full-catalog
+  .full-catalog-btn
     width: 150px
     padding-left: 21px
     padding-right: 21px
@@ -376,7 +385,10 @@
     font-size: 16px
     line-height: 20px
 
-  .header-left .header-menu
+  .header-menu
+    display: none
+
+  .header-menu.mobile-menu
     display: block
     position: fixed
     left: -400px
@@ -393,18 +405,15 @@
     &.open
       left: 0
 
-  .header-menu ul.mobile, .header-menu > ul
+  .header-menu.mobile-menu, .header-menu.mobile-menu > ul
     display: block
 
-  .header-left .header-menu > ul > li
+  .header-menu.mobile-menu > ul > li
     padding: 15px 30px
     border-bottom: 1px solid rgba(0,0,0,0.1)
 
-  .header-menu > ul > li > a
+  .header-menu.mobile-menu > ul > li > a
     font-size: 22px
-
-  .header-right .header-menu
-    display: none
 
   .close-mobile-menu
     display: block
@@ -418,7 +427,13 @@
     padding-top: 57px
 
   .header-section.on-scroll
-    padding: 7px 0
+    padding: 14px 0
+
+  .popup-added-title
+    font-size: 34px
+
+  .header-section
+    padding: 14px 0
 
 
 @media screen and (max-width: 991px)
@@ -653,7 +668,7 @@
   .cross-icon::before, .cross-icon::after
     height: 1px
 
-  .header-left .header-menu
+  .header-menu.mobile-menu
     padding: 45px 0 20px
 
   .close-mobile-menu
@@ -662,14 +677,26 @@
     width: 20px
     height: 20px
 
-  .header-left .header-menu > ul > li
+  .header-menu.mobile-menu > ul > li
     padding: 13px 20px
 
-  .header-menu > ul > li > a
+  .header-menu.mobile-menu > ul > li > a
     font-size: 20px
 
   .all-content
     padding-top: 53px
+
+  .popup-added-title
+    font-size: 32px
+    margin-bottom: 25px
+
+  .actions-added-btn
+    padding: 10px 20px
+    min-width: 115px
+    min-height: 30px
+    border-width: 2px
+    font-size: 16px
+    margin: 0 10px
 
 
 
@@ -769,12 +796,22 @@
   #search-form
     padding: 0
 
-  .header-left .header-menu
+  .header-menu.mobile-menu
     width: 280px
 
   .all-content
     padding-top: 50px
 
+  .popup-added-title
+    font-size: 28px
+    margin-bottom: 22px
+
+  .actions-added-cart
+    flex-direction: column
+
+  .actions-added-btn
+    width: 162px
+    margin-bottom: 15px
 
 
 
@@ -875,10 +912,14 @@
     background: #dc6e0b
     border-color: #dc6e0b
 
-  #full-catalog:hover
+  .full-catalog-link:hover .full-catalog-btn
     background: #dc6e0b
 
   .search-find-list a:hover
     color: $orange
 
+  .actions-added-btn
+    &.actions-order:hover, &.actions-continue:hover
+      background: #dc6e0b
+      border-color: #dc6e0b
 
