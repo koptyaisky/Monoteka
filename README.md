@@ -1,4 +1,8 @@
 # Monoteka
+
+Посмотреть страницу можно [тут](https://koptyaisky.github.io/Monoteka/)
+
+
 ### Тестовое задание:
 * Создать страницу магазина по макету из Photoshop.
 * Придумать и реализовать hover-effect.
