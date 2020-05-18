@@ -16,9 +16,9 @@
 * Сборка - Gulp
 * jQuery
 * Плагины: 
-    * Swiper.js - слайдер
-    * overlayScrollbars.js - скролл названий табов в мобильной версии
-    * bodyScrollLock.js - для запрета скролла при открытом меню
+    * [Слайдер](https://swiperjs.com/)
+    * [Скролл](https://kingsora.github.io/OverlayScrollbars/#!overview) названий табов в мобильной версии
+    * [Запрет скролла](https://github.com/willmcpo/body-scroll-lock) при открытом меню
 
 
 ### Реализованы:
